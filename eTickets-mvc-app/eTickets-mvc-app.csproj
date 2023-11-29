@@ -7,4 +7,10 @@
     <RootNamespace>eTickets_mvc_app</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
 </Project>
