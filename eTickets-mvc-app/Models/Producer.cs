@@ -5,9 +5,6 @@ namespace eTickets_mvc_app.Models
 {
 	public class Producer
 	{
-		public Producer()
-		{
-		}
 
         [Key]
 
@@ -18,6 +15,10 @@ namespace eTickets_mvc_app.Models
         public string FullName { get; set; }
 
         public string Bio { get; set; }
+
+        //Relationships
+
+        public List<Movie> Movies { get; set; }
     }
 }
 

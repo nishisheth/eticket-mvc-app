@@ -16,6 +16,10 @@ namespace eTickets_mvc_app.Models
 
 		public string Description { get; set; }
 
+		//Relationships
+
+		public List<Movie> Movies { get; set; }
+
 	}
 }
 

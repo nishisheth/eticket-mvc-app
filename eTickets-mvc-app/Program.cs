@@ -1,4 +1,15 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿using Microsoft.EntityFrameworkCore;
+
+var builder = WebApplication.CreateBuilder(args);
+
+//DBContext configuration
+
+//builder.Services.AddDbContext<>();
+
+
+builder.Services.AddDbContext<eTickets_mvc_app.Data.AppDbContext>(options => options.UseSqlServer(
+builder.Configuration.GetConnectionString("DefaultConnectionString")
+));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
